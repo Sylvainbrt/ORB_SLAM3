@@ -1,5 +1,5 @@
 # 1. Installation of ORB-SLAM 3 on a fresh installed Ubuntu 20.04
-Installation guide improved from https://github.com/Mauhing/ORB_SLAM3/blob/master/README.md
+Installation guide improved from https://github.com/Mauhing/ORB_SLAM3/blob/master/README.md  
 Install all liberay dependencies.
 ```shell
 
@@ -36,9 +36,10 @@ and save and close the file
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=Release -D WITH_CUDA=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make -j 3
+make -j 2
 sudo make install
 ```
+The number after _make -j_ refers to the number of cores used in the make command. Setting this to high will create an error.
 > If you want to install to conda environment, use `CMAKE_INSTALL_PREFIX=$CONDA_PREFIX` instead.
 ---
 
