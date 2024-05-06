@@ -76,8 +76,9 @@ to
 in order to make this comiple.  
 Now, we can comiple ORB-SLAM3 and it dependencies as DBoW2 and g2o.  
 
+Change the 4 lines with _make -j_ inside build.sh to _make -j 2_ if your virtual machine has only two cores.  
 Now Simply just run (if you encounter compiler, try to run the this shell script 2 or 3 more time. It works for me.)
-Change all the _make -j_ lines inside build.sh to _make -j 2_ if your virtual machine has only two cores.
+
 ```shell
 ./build.sh
 ```
