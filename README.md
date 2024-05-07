@@ -19,7 +19,7 @@ sudo apt install libeigen3-dev
 ---
 
 ### Install OpenCV 3.2.0
-The ORB-SLAM 3 was test by  
+The ORB-SLAM 3 was tested by  
 ```shell
 cd ~
 mkdir Dev && cd Dev
@@ -76,8 +76,8 @@ to
 in order to make this compile.  
 Now, we can compile ORB-SLAM3 and it dependencies as DBoW2 and g2o.  
 
-Change the 4 lines with _make -j_ inside build.sh to _make -j 2_ if your virtual machine has only two cores.  
-Now Simply just run (if you encounter compiler, try to run the this shell script 2 or 3 more time. It works for me.)
+We also need to change the 4 lines with _make -j_ and _make -j 4_ inside 'gedit build.sh' to _make -j 2_ if your virtual machine has only two cores.  
+Now Simply run (if you encounter compiler, try to run the this shell script 2 or 3 more time. It worked for me.)
 
 ```shell
 ./build.sh
@@ -120,7 +120,7 @@ cd ~/Dev/ORB_SLAM3
 ```
 
 # 4 Validation Estimate vs Ground True
-We need numpy and matplotlib installed in pytho2.7. But Ubuntu20.04 has not pip2.7
+We need numpy and matplotlib installed in python2.7. But Ubuntu20.04 doesn't have pip2.7
 ```shell
 sudo apt install curl
 cd ~/Desktop
