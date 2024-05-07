@@ -129,6 +129,27 @@ python2.7 -m pip install matplotlib==2.2.5 numpy
 ```
 
 **Run and plot Ground truth**
+```
+cd ~/Dev/ORB_SLAM3
+
+./Examples/Stereo/stereo_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Stereo/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereo
+```
+
+**Plot estimate vs Ground truth**
+```
+cd ~/Dev/ORB_SLAM3
+
+python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/EuRoC_left_cam/MH01_GT.txt f_dataset-MH01_stereo.txt --plot MH01_stereo.pdf
+```
+
+open the pdf `MH01_stereo.pdf` and you see the plot
+
+# 5 Some comments
+1. You should download more datasets from EuRoc to see more 
+
+2. The support of inertial measurement unit (IMU) has incredibly increased the accuracy, although it is alreday very accurate without IMU.
+
+# The rest is the original information
 
 # ORB-SLAM3
 
