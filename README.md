@@ -76,7 +76,7 @@ to
 in order to make this compile.  
 Now, we can compile ORB-SLAM3 and it dependencies as DBoW2 and g2o.  
 
-We also need to change the 4 lines with _make -j_ and _make -j 4_ inside 'gedit build.sh' to _make -j 2_ if your virtual machine has only two cores.  
+We also need to change the 4 lines with `make -j` and `make -j 4` inside `gedit build.sh` to `make -j 2` if your virtual machine has only two cores.  
 Now Simply run (if you encounter compiler, try to run the this shell script 2 or 3 more time. It worked for me.)
 
 ```shell
