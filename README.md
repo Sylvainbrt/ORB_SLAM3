@@ -119,7 +119,7 @@ cd ~/Dev/ORB_SLAM3
 ./Examples/Stereo-Inertial/stereo_inertial_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo-Inertial/EuRoC.yaml ~/Datasets/EuRoc/MH01 ./Examples/Stereo-Inertial/EuRoC_TimeStamps/MH01.txt dataset-MH01_stereoi
 ```
 
-# 4 Validation Estimate vs Ground True
+# 4 Validation, Estimate vs Ground Truth
 We need numpy and matplotlib installed in python2.7. But Ubuntu20.04 doesn't have pip2.7
 ```shell
 cd ~/Desktop
@@ -128,7 +128,7 @@ sudo python2.7 get-pip.py
 python2.7 -m pip install matplotlib==2.2.5 numpy
 ```
 
-**Run and plot Ground true**
+**Run and plot Ground truth**
 
 # ORB-SLAM3
 
