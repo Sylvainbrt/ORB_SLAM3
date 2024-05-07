@@ -122,11 +122,10 @@ cd ~/Dev/ORB_SLAM3
 # 4 Validation Estimate vs Ground True
 We need numpy and matplotlib installed in python2.7. But Ubuntu20.04 doesn't have pip2.7
 ```shell
-sudo apt install curl
 cd ~/Desktop
-curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
-sudo python2 get-pip.py
-pip2.7 install numpy matplotlib
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python2.7 get-pip.py
+python2.7 -m pip install matplotlib==2.2.5 numpy
 ```
 
 **Run and plot Ground true**
